@@ -294,7 +294,7 @@
 		<key>#XMPDetection</key>
 		<string>Yes</string>
 		<key>Arguments</key>
-		<string>-igfxnohdmi debug=0x100 -alcbeta alcid=29 keepsyms=1 abm_firstpolldelay=16000 darkwake=0 nv_disable=1</string>
+		<string>-igfxnohdmi debug=0x100 -alcbeta keepsyms=1 abm_firstpolldelay=16000 darkwake=0 nv_disable=1</string>
 		<key>Debug</key>
 		<false/>
 		<key>DefaultVolume</key>
@@ -438,18 +438,10 @@
 				</data>
 			</dict>
 		</array>
-		<key>Audio</key>
-		<dict>
-			<key>Inject</key>
-			<integer>29</integer>
-		</dict>
 		<key>FakeID</key>
-		<dict>
-			<key>#IntelGFX</key>
-			<string>0x59168086</string>
-			<key>IntelGFX</key>
-			<string>0x59168086</string>
-		</dict>
+		<dict/>
+		<key>HDMIInjection</key>
+		<true/>
 		<key>Properties</key>
 		<dict>
 			<key>PciRoot(0x0)/Pci(0x1f,0x3)</key>
@@ -461,6 +453,49 @@
 				<key>layout-id</key>
 				<data>
 				WAAAAA==
+				</data>
+			</dict>
+			<key>PciRoot(0x0)/Pci(0x2,0x0)</key>
+			<dict>
+				<key>AAPL,ig-platform-id</key>
+				<data>
+				AAAbWQ==
+				</data>
+				<key>device-id</key>
+				<data>
+				G1kAAA==
+				</data>
+				<key>enable-hdmi20</key>
+				<data>
+				AQAAAA==
+				</data>
+				<key>framebuffer-con2-enable</key>
+				<data>
+				AQAAAA==
+				</data>
+				<key>framebuffer-con2-index</key>
+				<data>
+				/////w==
+				</data>
+				<key>framebuffer-fbmem</key>
+				<data>
+				AACQAA==
+				</data>
+				<key>framebuffer-patch-enable</key>
+				<data>
+				AQAAAA==
+				</data>
+				<key>framebuffer-portcount</key>
+				<data>
+				AgAAAA==
+				</data>
+				<key>framebuffer-stolenmem</key>
+				<data>
+				AAAwAQ==
+				</data>
+				<key>framebuffer-unifiedmem</key>
+				<data>
+				AAAAgA==
 				</data>
 			</dict>
 		</dict>
@@ -538,8 +573,6 @@
 	</dict>
 	<key>Graphics</key>
 	<dict>
-		<key>#ig-platform-id</key>
-		<string>0x591b0000</string>
 		<key>EDID</key>
 		<dict>
 			<key>Inject</key>
@@ -550,14 +583,12 @@
 			<key>ATI</key>
 			<false/>
 			<key>Intel</key>
-			<true/>
+			<false/>
 			<key>NVidia</key>
 			<false/>
 		</dict>
 		<key>NvidiaSingle</key>
 		<false/>
-		<key>ig-platform-id</key>
-		<string>0x59160000</string>
 	</dict>
 	<key>KernelAndKextPatches</key>
 	<dict>
