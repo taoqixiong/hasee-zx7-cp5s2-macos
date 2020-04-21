@@ -213,10 +213,10 @@
 				<data>G1kAAA==</data>
 				<key>enable-hdmi20</key>
 				<data>AQAAAA==</data>
-				<key>framebuffer-con2-enable</key>
+				<key>framebuffer-con1-alldata</key>
+				<data>AQUJAAAEAACHAQAAAgQKAAAEAACHAQAA</data>
+				<key>framebuffer-con1-enable</key>
 				<data>AQAAAA==</data>
-				<key>framebuffer-con2-index</key>
-				<data>/////w==</data>
 				<key>framebuffer-fbmem</key>
 				<data>AACQAA==</data>
 				<key>framebuffer-patch-enable</key>
